@@ -9,7 +9,6 @@
 *.exe
 *.exe~
 *.gzip
-*.json
 fastDNS
 .pswd
 tools/php/thinkphp
@@ -26,7 +25,6 @@ tools/php/thinkphp
 /.DbCache/
 /.ipCc/
 /chaos/*.txt
-/config/chaos
 /data1/
 /data_9/*
 /db/
@@ -41,7 +39,6 @@ tools/php/thinkphp
 /tools/pages/node_modules/
 51pwnPlatform
 DbCache
-config/*_db.*
 go-database/*
 goSqlite_gorm
 logs/logs.log
