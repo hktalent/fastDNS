@@ -269,9 +269,9 @@ func ParseOption(dnsDir *embed.FS) *Options {
 	flag.IntVar(&opt.PingCnt, "c", 2, "ping count:2")
 	flag.StringVar(&opt.Type, "m", "cn", "nameservers = all,\n"+DnsList+"\ndefault: cn")
 	flag.IntVar(&opt.OutTopNum, "n", 5, "out top dns num:5")
-	flag.Int64Var(&opt.TestStop, "y", 2000, "Test Stop dns num:3000")
-	flag.IntVar(&opt.Thread, "t", 1024, "Thread num:5")
-	flag.StringVar(&opt.DomainFile, "f", "/Users/51pwn/MyWork/bug-bounty/data/zq/testDomain.txt", "test Domain file name")
+	flag.Int64Var(&opt.TestStop, "y", 1000, "Test Stop dns num:1000")
+	flag.IntVar(&opt.Thread, "t", 1024, "Thread num:1024")
+	flag.StringVar(&opt.DomainFile, "f", "data/zq/testDomain.txt", "test Domain file name")
 
 	flag.Parse()
 	opt.PingTimeout = time.Duration(tmot)
