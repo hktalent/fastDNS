@@ -19,9 +19,9 @@ builds:
 #        - ./.github/upx.sh
 
 archives:
-- format: zip
-  replacements:
-      darwin: macOS
+  - format: zip
+    replacements:
+        darwin: macOS
 
 checksum:
   name_template: "{{ .ProjectName }}-mac-arm64-checksums.txt"
