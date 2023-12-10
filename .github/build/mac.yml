@@ -9,7 +9,7 @@ builds:
     binary: fastDNS
     env:
       - CGO_ENABLED=1
-    main: main.go
+    main: Main.go
     goos:
       - darwin
     goarch:
