@@ -3,7 +3,12 @@ package main
 import (
 	"embed"
 	"github.com/hktalent/fastDNS/option"
+	util "github.com/hktalent/go-utils"
+	"sync"
 )
+
+//go:embed config/*
+var config embed.FS
 
 // 全球 公共的 免费 的 62789 个dns
 // https://public-dns.info/nameserver/cn.txt
@@ -13,5 +18,9 @@ import (
 var dnsDir embed.FS
 
 func main() {
+	util.Wg = &sync.WaitGroup{}
+	util.DoInit(&config)
 	option.DoFastDns(&dnsDir)
+	util.Wg.Wait()
+	util.CloseAll()
 }
