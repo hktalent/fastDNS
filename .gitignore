@@ -27,8 +27,6 @@ tools/php/thinkphp
 /.ipCc/
 /chaos/*.txt
 /config/chaos
-/data*
-/data/
 /data1/
 /data_9/*
 /db/
