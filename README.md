@@ -7,6 +7,8 @@ So I thought, how to choose the best DNS pair?
 - Use a different IP (VPN) to go out, need to run once and choose the best DNS to set up
 - This version does not provide a test domain list for the time being. You can also create your own domain list that you frequently visit. The tool will help you calculate which DNS is optimal.
 - The best DNS obtained by the same access list in different regions (regions) is different.
+- By default, China’s DNS list is used for testing and filtering.
+- By default, ping is not enabled for testing.
 
 ## How use
 ```
