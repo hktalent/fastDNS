@@ -258,6 +258,8 @@ func UpAllList(opt *Options, dnsDir *embed.FS) {
 	wg.Wait()
 }
 
+// https://github.com/miekg/dns
+// https://github.com/AdguardTeam/AdGuardHome
 func ParseOption(dnsDir *embed.FS) *Options {
 	var opt = Options{}
 	var tmot int64
