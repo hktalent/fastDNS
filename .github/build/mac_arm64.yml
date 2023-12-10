@@ -13,10 +13,9 @@ builds:
     goos:
       - darwin
     goarch:
-      - amd64
+      - arm64
 #    hooks:
 #      post:
-#        - upx --brute dist/51pwnPlatform-darwin_darwin_amd64_*/fastDNS
 #        - ./.github/upx.sh
 
 archives:
@@ -25,4 +24,4 @@ archives:
       darwin: macOS
 
 checksum:
-  name_template: "{{ .ProjectName }}-mac-checksums.txt"
+  name_template: "{{ .ProjectName }}-mac-arm64-checksums.txt"
