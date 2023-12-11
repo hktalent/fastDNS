@@ -21,8 +21,7 @@ builds:
 
 archives:
   - format: zip
-    replacements:
-        darwin: macOS
+    compression: xz
 
 checksum:
   name_template: "{{ .ProjectName }}-mac-checksums.txt"
